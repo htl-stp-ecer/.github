@@ -30,9 +30,7 @@ We build autonomous robots that compete on a game table — navigating, detectin
 Five layers, one shared LCM communication backbone — no capability gaps between beginner and expert workflows.
 
 <div align="center">
-  <picture>
-    <img alt="RaccoonOS Architecture" src="profile/architecture.svg" width="700"/>
-  </picture>
+  <img alt="RaccoonOS Architecture" src="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/architecture.svg" width="700"/>
 </div>
 
 ---
