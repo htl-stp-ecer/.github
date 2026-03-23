@@ -23,6 +23,8 @@ Competing in [Botball](https://www.botball.org/) & [ECER](https://ecer.botball.o
 
 We build autonomous robots that compete on a game table — navigating, detecting objects, and completing missions with zero human input. Our platform, **RaccoonOS**, is a full custom stack running on the [KIPR Wombat](https://www.kipr.org/kipr/hardware/botball-controller-wombat) controller, from bare-metal firmware up to a visual programming environment.
 
+---
+
 ## RaccoonOS Architecture
 
 Five layers, one shared LCM communication backbone — no capability gaps between beginner and expert workflows.
@@ -71,30 +73,78 @@ block-beta
   style HW fill:#e63946,color:#fff
 ```
 
+---
+
+## Quick Start
+
+> 📖 Full documentation at **[docs.htl-stp-ecer.github.io](https://htl-stp-ecer.github.io/documentation)**
+
+```bash
+pip install raccoon-cli
+raccoon init my-robot
+raccoon hardware-wizard
+```
+
+- **New to the platform?** Start with the [Getting Started guide](https://htl-stp-ecer.github.io/documentation/getting-started).
+- **Just want to read the code?** Start with [`raccoon-lib`](https://github.com/htl-stp-ecer/raccoon-lib) — it's the core.
+
+---
+
 ## Repositories
 
+### Core Platform
+
 | Repository | Description | Tech |
-|:-----------|:-----------|:-----|
+|:-----------|:------------|:-----|
 | **[raccoon-lib](https://github.com/htl-stp-ecer/raccoon-lib)** | Core robotics library — PID control, kinematics, odometry, step-based missions | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging with reliable delivery | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[raccoon-cli](https://github.com/htl-stp-ecer/raccoon-cli)** | Development toolchain — scaffolding, hardware wizard, codegen, remote sync | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[Firmware-Stp](https://github.com/htl-stp-ecer/Firmware-Stp)** | Bare-metal STM32F427 firmware — motor PID, servo, IMU, SPI bridge | ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black) |
 | **[stm32-data-reader](https://github.com/htl-stp-ecer/stm32-data-reader)** | Raspberry Pi ↔ STM32 SPI bridge, publishes sensor data via LCM | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
-| **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — on-robot Flutter desktop environment with dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
-| **[raccoon-cam](https://github.com/htl-stp-ecer/raccoon-cam)** | High-performance camera streaming with LCM integration | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
-| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Technical docs site | ![Hugo](https://img.shields.io/badge/-Hugo-FF4088?style=flat-square&logo=hugo&logoColor=white) |
-| **[spring-2026-gametable](https://github.com/htl-stp-ecer/spring-2026-gametable)** | ESP32-C3 drum dispenser controller with Next.js web UI | ![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white) |
-| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | Research papers & competition documentation archive | ![Docs](https://img.shields.io/badge/-Papers-grey?style=flat-square&logo=readme&logoColor=white) |
+| **[raccoon-cli](https://github.com/htl-stp-ecer/raccoon-cli)** | Dev toolchain — scaffolding, hardware wizard, codegen, remote sync | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — Flutter desktop environment with real-time dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
+| [WebIDE](https://github.com/htl-stp-ecer/WebIDE) | IDE | |
+| **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging (C++, Python, Dart) | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
-## Beyond the Stack
+### 📚 Documentation & Research
 
-**Computer Vision** — YOLOv11 object detection trained on real footage and synthetic data from our Unity-based simulator with randomized camera angles, lighting, and object placement.
+| Repository | Description |
+|:-----------|:------------|
+| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://htl-stp-ecer.github.io/documentation) |
+| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | ECER conference papers and competition archive |
 
-**Path Planning** — A\* pathfinder with correction-weighted costs that prefers routes along walls and lines, giving the robot tactile feedback for mid-mission self-correction instead of relying on dead reckoning.
+---
 
-**On-Robot UI** — StpVelox, a custom Flutter desktop environment running directly on the Pi via flutter-pi, with a real-time dashboard, sensor visualization, camera feed, and WiFi management.
+## Origins
 
-**Custom OS** — StpOs, a reproducible Raspberry Pi image built with our own image creator, pre-configured with all RaccoonOS services.
+RaccoonOS grew out of **[Tobias Madlberger](https://github.com/ToberoCat)**'s years competing in Botball at HTL St. Pölten (2022–2026). What started as competition code went through multiple complete rewrites, slowly becoming a proper five-layer robotics platform - not by design, but by necessity.
+
+The architecture, core libraries, firmware, and toolchain were all built from scratch, The platform was formally named *RaccoonOS* in September 2025.
+
+On graduating in 2026, Tobias open-sourced everything — not just for future HTL teams, but for every Botball student who would otherwise face the same wall he hit in 2022: no documentation, no foundation, no starting point.
+
+> *"Three years of figuring out what nobody wrote down - now it's written down."*
+
+---
+
+## Team
+
+| Name | Role |
+|:-----|:-----|
+| **[Tobias Madlberger](https://github.com/ToberoCat)** | Founder & Lead Architect — platform design, middleware, firmware, toolchain, SDK, AI pipeline, WebIDE core, and everything in between (2022–2026, 1000+ hours) |
+| Matthias Greil | Hardware & Firmware — STM32 implementation, IMU integration, low-level driver work; shaped the high-level SDK as a power user |
+| Fabian Popov | AI & Visualization — object detection data labeling, game table visualization and simulation in the WebIDE |
+| Jakob Schlögl | UI — BotUI development |
+| Daniel Schneeweis | WebIDE — developed the web-based IDE |
+| Florian Schwanzer | General Contributions — library work, sensor calibration, tests, and filling gaps wherever needed |
+| Anna Theis | Early Adopter & Pre-Alpha Feedback — used the earliest bare-bones versions in real robot development, whose hands-on feedback shaped the foundation everything else grew from |
+
+---
+
+## Contributing
+
+RaccoonOS is open to the wider Botball community.
+
+- **Bug reports & feature requests** — open a GitHub issue in the relevant repo
+- **Code contributions** — PRs welcome; see `CONTRIBUTING.md` in each repo
+- **New teams** — reach out to senior teams as they have the knowlegde and can help you - alternatively read the docs
 
 ---
 
