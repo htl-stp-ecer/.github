@@ -27,24 +27,48 @@ We build autonomous robots that compete on a game table — navigating, detectin
 
 Five layers, one shared LCM communication backbone — no capability gaps between beginner and expert workflows.
 
-```
- ┌─────────────────────────────────────────────────────────────┐
- │  Layer 5   Visual Flowchart Editor (WebIDE)                 │  Drag-and-drop mission
- │            Generates identical Python to hand-written code  │  building for beginners
- ├─────────────────────────────────────────────────────────────┤
- │  Layer 4   Declarative Python SDK                           │  Step-based missions:
- │            drive · turn · line-follow · wall-align          │  parallel, timeout, loops
- ├─────────────────────────────────────────────────────────────┤
- │  Layer 3   Raccoon CLI                                      │  Scaffolding, hardware
- │            Project toolchain & code generation              │  wizard, calibration, sync
- ├─────────────────────────────────────────────────────────────┤
- │  Layer 2   C++20 Middleware (LibStp)                        │  PID control, kinematics,
- │            Differential & mecanum · odometry · IMU fusion   │  automated PID tuning
- ├─────────────────────────────────────────────────────────────┤
- │  Layer 1   LCM Transport & Hardware Bridge                  │  SPI ↔ STM32F427 firmware
- │            raccoon-transport (C++ · Python · Dart)          │  25 kHz PWM · 200 Hz PID
- └─────────────────────────────────────────────────────────────┘
-                        KIPR Wombat + Raspberry Pi
+```mermaid
+block-beta
+  columns 2
+
+  block:L5:2
+    columns 2
+    L5T["🖱️ Layer 5 — Visual Flowchart Editor (WebIDE)\nGenerates identical Python to hand-written code"]
+    L5D["Drag-and-drop mission\nbuilding for beginners"]
+  end
+
+  block:L4:2
+    columns 2
+    L4T["🐍 Layer 4 — Declarative Python SDK\ndrive · turn · line-follow · wall-align"]
+    L4D["Step-based missions:\nparallel, timeout, loops"]
+  end
+
+  block:L3:2
+    columns 2
+    L3T["🦝 Layer 3 — Raccoon CLI\nProject toolchain & code generation"]
+    L3D["Scaffolding, hardware\nwizard, calibration, sync"]
+  end
+
+  block:L2:2
+    columns 2
+    L2T["⚙️ Layer 2 — C++20 Middleware (LibStp)\nDifferential & mecanum · odometry · IMU fusion"]
+    L2D["PID control, kinematics,\nautomated PID tuning"]
+  end
+
+  block:L1:2
+    columns 2
+    L1T["🔌 Layer 1 — LCM Transport & Hardware Bridge\nraccoon-transport (C++ · Python · Dart)"]
+    L1D["SPI ↔ STM32F427 firmware\n25 kHz PWM · 200 Hz PID"]
+  end
+
+  HW["🤖 KIPR Wombat + Raspberry Pi"]:2
+
+  style L5 fill:#4a90d9,color:#fff
+  style L4 fill:#5a9bd5,color:#fff
+  style L3 fill:#6ba5d1,color:#fff
+  style L2 fill:#7cafcd,color:#fff
+  style L1 fill:#8db9c9,color:#fff
+  style HW fill:#e63946,color:#fff
 ```
 
 ## Repositories
