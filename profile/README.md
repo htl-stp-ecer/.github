@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/raccoon.svg" alt="RaccoonOS Mascot" width="120"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/raccoon.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/raccoon-dark.svg" />
+  <img alt="RaccoonOS Mascot" src="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/raccoon-dark.svg" width="120" />
+</picture>
 
 # HTL St. Pölten Robotics
 
