@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/HTL%20St.%20P%C3%B6lten-Robotics-e63946?style=for-the-badge&logo=probot&logoColor=white" alt="HTL St. Pölten Robotics"/>
+<img src="https://raw.githubusercontent.com/htl-stp-ecer/.github/main/profile/raccoon.svg" alt="RaccoonOS Mascot" width="120"/>
 
-### Autonomous robotics · [HTL St. Pölten](https://www.htlstp.ac.at/) · Austria
+# HTL St. Pölten Robotics
+
+**Autonomous robotics · [HTL St. Pölten](https://www.htlstp.ac.at/) · Austria**
 
 Competing in [Botball](https://www.botball.org/) & [ECER](https://ecer.botball.org/)
 
