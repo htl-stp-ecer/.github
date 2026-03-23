@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="12" fill="#0d1117"/>
+
+  <!-- LCM backbone dashed line -->
+  <line x1="720" y1="48" x2="720" y2="392" stroke="#475569" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="720" y="414" text-anchor="middle" fill="#64748b" font-size="10" font-weight="500">LCM</text>
+  <text x="720" y="426" text-anchor="middle" fill="#64748b" font-size="10" font-weight="500">Backbone</text>
+
+  <!-- ═══════════ Layer 5 ═══════════ -->
+  <rect x="40" y="20" rx="8" width="650" height="64" fill="#7c3aed"/>
+  <circle cx="70" cy="44" r="12" fill="#6d28d9"/>
+  <text x="70" y="48" text-anchor="middle" fill="#e9d5ff" font-size="12" font-weight="700">5</text>
+  <text x="92" y="42" fill="#fff" font-size="13" font-weight="600">Visual Flowchart Editor (WebIDE)</text>
+  <text x="92" y="60" fill="#c4b5fd" font-size="11">Generates identical Python to hand-written code</text>
+  <text x="670" y="42" text-anchor="end" fill="#a78bfa" font-size="10" font-style="italic">Drag-and-drop missions</text>
+  <text x="670" y="56" text-anchor="end" fill="#a78bfa" font-size="10" font-style="italic">for beginners</text>
+  <circle cx="720" cy="52" r="5" fill="#7c3aed" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- Arrow 5→4 -->
+  <polygon points="365,84 360,88 370,88" fill="#475569" opacity="0.5"/>
+
+  <!-- ═══════════ Layer 4 ═══════════ -->
+  <rect x="40" y="92" rx="8" width="650" height="64" fill="#2563eb"/>
+  <circle cx="70" cy="116" r="12" fill="#1d4ed8"/>
+  <text x="70" y="120" text-anchor="middle" fill="#bfdbfe" font-size="12" font-weight="700">4</text>
+  <text x="92" y="114" fill="#fff" font-size="13" font-weight="600">Declarative Python SDK</text>
+  <text x="92" y="132" fill="#93c5fd" font-size="11">drive · turn · line-follow · wall-align</text>
+  <text x="670" y="114" text-anchor="end" fill="#60a5fa" font-size="10" font-style="italic">Step-based missions:</text>
+  <text x="670" y="128" text-anchor="end" fill="#60a5fa" font-size="10" font-style="italic">parallel, timeout, loops</text>
+  <circle cx="720" cy="124" r="5" fill="#2563eb" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- Arrow 4→3 -->
+  <polygon points="365,156 360,160 370,160" fill="#475569" opacity="0.5"/>
+
+  <!-- ═══════════ Layer 3 ═══════════ -->
+  <rect x="40" y="164" rx="8" width="650" height="64" fill="#0891b2"/>
+  <circle cx="70" cy="188" r="12" fill="#0e7490"/>
+  <text x="70" y="192" text-anchor="middle" fill="#a5f3fc" font-size="12" font-weight="700">3</text>
+  <text x="92" y="186" fill="#fff" font-size="13" font-weight="600">Raccoon CLI</text>
+  <text x="92" y="204" fill="#67e8f9" font-size="11">Project toolchain &amp; code generation</text>
+  <text x="670" y="186" text-anchor="end" fill="#22d3ee" font-size="10" font-style="italic">Scaffolding, hardware</text>
+  <text x="670" y="200" text-anchor="end" fill="#22d3ee" font-size="10" font-style="italic">wizard, calibration, sync</text>
+  <circle cx="720" cy="196" r="5" fill="#0891b2" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- Arrow 3→2 -->
+  <polygon points="365,228 360,232 370,232" fill="#475569" opacity="0.5"/>
+
+  <!-- ═══════════ Layer 2 ═══════════ -->
+  <rect x="40" y="236" rx="8" width="650" height="64" fill="#059669"/>
+  <circle cx="70" cy="260" r="12" fill="#047857"/>
+  <text x="70" y="264" text-anchor="middle" fill="#a7f3d0" font-size="12" font-weight="700">2</text>
+  <text x="92" y="258" fill="#fff" font-size="13" font-weight="600">C++20 Middleware (LibStp)</text>
+  <text x="92" y="276" fill="#6ee7b7" font-size="11">Differential &amp; mecanum · odometry · IMU fusion</text>
+  <text x="670" y="258" text-anchor="end" fill="#34d399" font-size="10" font-style="italic">PID control, kinematics,</text>
+  <text x="670" y="272" text-anchor="end" fill="#34d399" font-size="10" font-style="italic">automated PID tuning</text>
+  <circle cx="720" cy="268" r="5" fill="#059669" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- Arrow 2→1 -->
+  <polygon points="365,300 360,304 370,304" fill="#475569" opacity="0.5"/>
+
+  <!-- ═══════════ Layer 1 ═══════════ -->
+  <rect x="40" y="308" rx="8" width="650" height="64" fill="#d97706"/>
+  <circle cx="70" cy="332" r="12" fill="#b45309"/>
+  <text x="70" y="336" text-anchor="middle" fill="#fef3c7" font-size="12" font-weight="700">1</text>
+  <text x="92" y="330" fill="#fff" font-size="13" font-weight="600">LCM Transport &amp; Hardware Bridge</text>
+  <text x="92" y="348" fill="#fde68a" font-size="11">raccoon-transport (C++ · Python · Dart)</text>
+  <text x="670" y="330" text-anchor="end" fill="#fbbf24" font-size="10" font-style="italic">SPI ↔ STM32F427 firmware</text>
+  <text x="670" y="344" text-anchor="end" fill="#fbbf24" font-size="10" font-style="italic">25 kHz PWM · 200 Hz PID</text>
+  <circle cx="720" cy="340" r="5" fill="#d97706" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- Arrow 1→HW -->
+  <polygon points="365,372 360,376 370,376" fill="#475569" opacity="0.5"/>
+
+  <!-- ═══════════ Hardware ═══════════ -->
+  <rect x="40" y="380" rx="8" width="650" height="44" fill="#dc2626"/>
+  <text x="365" y="407" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">KIPR Wombat  +  Raspberry Pi</text>
+
+  <!-- Footer -->
+  <text x="400" y="466" text-anchor="middle" fill="#475569" font-size="11" letter-spacing="3" font-weight="600">R A C C O O N O S</text>
+
+</svg>
