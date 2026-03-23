@@ -8,12 +8,12 @@ Competing in [Botball](https://www.botball.org/) & [ECER](https://ecer.botball.o
 
 *"Raise the Floor, Don't Lower the Ceiling"*
 
-![C++](https://img.shields.io/badge/C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart%2FFlutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B20-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
 </div>
 
@@ -60,7 +60,7 @@ raccoon hardware-wizard
 | **[stm32-data-reader](https://github.com/htl-stp-ecer/stm32-data-reader)** | Raspberry Pi ↔ STM32 SPI bridge, publishes sensor data via LCM | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 | **[raccoon-cli](https://github.com/htl-stp-ecer/raccoon-cli)** | Dev toolchain — scaffolding, hardware wizard, codegen, remote sync | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — Flutter desktop environment with real-time dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
-| [WebIDE](https://github.com/htl-stp-ecer/WebIDE) | IDE | |
+| **[WebIDE](https://github.com/htl-stp-ecer/WebIDE)** | Visual flowchart editor — drag-and-drop step programming that generates real Python | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![Python](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) |
 | **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging (C++, Python, Dart) | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 ### 📚 Documentation & Research
@@ -110,12 +110,12 @@ RaccoonOS is open to the wider Botball community.
 
 <div align="center">
 
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
-![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![STM32](https://img.shields.io/badge/STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
 **St. Pölten, Austria** · [htlstp.ac.at](https://www.htlstp.ac.at/)
 
