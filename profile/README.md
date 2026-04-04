@@ -68,7 +68,7 @@ $ raccoon create project MyRobot // creates a new project & starts the configura
 
 | Repository | Description |
 |:-----------|:------------|
-| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://htl-stp-ecer.github.io/documentation) |
+| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://raccoon-docs.pages.dev/) |
 | **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | (PRIVATE) ECER conference papers and competition archive |
 
 ---
