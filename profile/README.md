@@ -39,15 +39,14 @@ Five layers, one shared LCM communication backbone — no capability gaps betwee
 
 ## Quick Start
 
-> 📖 Full documentation at **[docs.htl-stp-ecer.github.io](https://htl-stp-ecer.github.io/documentation)**
+> 📖 Full documentation at **[raccoon-docs.pages.dev](https://raccoon-docs.pages.dev/)**
 
 ```bash
-pip install raccoon-cli
-raccoon init my-robot
-raccoon hardware-wizard
+$ pip install raccoon-cli
+$ raccoon create project MyRobot // creates a new project & starts the configuration wizard
 ```
 
-- **New to the platform?** Start with the [Getting Started guide](https://htl-stp-ecer.github.io/documentation/getting-started).
+- **New to the platform?** Start with the [Getting Started guide](https://raccoon-docs.pages.dev/00-quick-start/).
 - **Just want to read the code?** Start with [`raccoon-lib`](https://github.com/htl-stp-ecer/raccoon-lib) — it's the core.
 
 ---
@@ -70,7 +69,7 @@ raccoon hardware-wizard
 | Repository | Description |
 |:-----------|:------------|
 | **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://htl-stp-ecer.github.io/documentation) |
-| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | ECER conference papers and competition archive |
+| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | (PRIVATE) ECER conference papers and competition archive |
 
 ---
 
