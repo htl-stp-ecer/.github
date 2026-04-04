@@ -47,6 +47,7 @@ $ raccoon create project MyRobot // creates a new project & starts the configura
 ```
 
 - **New to the platform?** Start with the [Getting Started guide](https://raccoon-docs.pages.dev/00-quick-start/).
+- **Want a full working example?** Clone [`raccoon-example`](https://github.com/htl-stp-ecer/raccoon-example) — a clean reference robot with every concept demonstrated and explained.
 - **Just want to read the code?** Start with [`raccoon-lib`](https://github.com/htl-stp-ecer/raccoon-lib) — it's the core.
 
 ---
@@ -63,6 +64,12 @@ $ raccoon create project MyRobot // creates a new project & starts the configura
 | **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — Flutter desktop environment with real-time dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
 | **[WebIDE](https://github.com/htl-stp-ecer/WebIDE)** | Visual flowchart editor — drag-and-drop step programming that generates real Python | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![Python](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) |
 | **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging (C++, Python, Dart) | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+
+### 🚀 Getting Started
+
+| Repository | Description |
+|:-----------|:------------|
+| **[raccoon-example](https://github.com/htl-stp-ecer/raccoon-example)** | Clean reference robot — every concept (missions, servos, sensors, line following, custom steps) in one readable project. **Start here if you're new.** |
 
 ### 📚 Documentation & Research
 
