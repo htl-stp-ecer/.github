@@ -6,7 +6,7 @@
 
 **Autonomous robotics · [HTL St. Pölten](https://www.htlstp.ac.at/) · Austria**
 
-Competing in [Botball](https://www.botball.org/) & [ECER](https://ecer.botball.org/)
+Competing in [Botball](https://www.kipr.org/botball/) & [ECER](https://ecer.pria.at/)
 
 *"Raise the Floor, Don't Lower the Ceiling"*
 
