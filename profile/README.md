@@ -23,7 +23,7 @@ Competing in [Botball](https://www.kipr.org/botball/) & [ECER](https://ecer.pria
 
 ## What We Do
 
-We build autonomous robots that compete on a game table — navigating, detecting objects, and completing missions with zero human input. Our platform, **RaccoonOS**, is a full custom stack running on the [KIPR Wombat](https://www.kipr.org/kipr/hardware/botball-controller-wombat) controller, from bare-metal firmware up to a visual programming environment.
+We build autonomous robots that compete on a game table — navigating, detecting objects, and completing missions with zero human input. Our platform, **RaccoonOS**, is a full custom stack running on the [KIPR Wombat](https://www.kipr.org/kipr/hardware-software) controller, from bare-metal firmware up to a visual programming environment.
 
 ---
 
