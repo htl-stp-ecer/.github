@@ -101,7 +101,7 @@ On graduating in 2026, Tobias open-sourced everything — not just for future HT
 | Matthias Greil | Hardware & Firmware — STM32 implementation, IMU integration, low-level driver work; shaped the high-level SDK as a power user |
 | Fabian Popov | AI & Visualization — object detection data labeling, game table visualization and simulation in the WebIDE |
 | Jakob Schlögl | UI — BotUI development |
-| Daniel Schneeweis | WebIDE — developed the web-based IDE |
+| **[Daniel Schneeweis](https://github.com/Kuucheen)** | WebIDE — developed the web-based IDE |
 | Florian Schwanzer | General Contributions — library work, sensor calibration, tests, and filling gaps wherever needed |
 | Anna Theis | Early Adopter & Pre-Alpha Feedback — used the earliest bare-bones versions in real robot development, whose hands-on feedback shaped the foundation everything else grew from |
 
