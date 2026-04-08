@@ -56,15 +56,16 @@ $ raccoon create project MyRobot // creates a new project & starts the configura
 
 ### Core Platform
 
-| Repository | Description | Tech |
-|:-----------|:------------|:-----|
-| **[raccoon-lib](https://github.com/htl-stp-ecer/raccoon-lib)** | Core robotics library — PID control, kinematics, odometry, step-based missions | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[stm32-data-reader](https://github.com/htl-stp-ecer/stm32-data-reader)** | Raspberry Pi ↔ STM32 SPI bridge, publishes sensor data via LCM | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
-| **[raccoon-cli](https://github.com/htl-stp-ecer/raccoon-cli)** | Dev toolchain — scaffolding, hardware wizard, codegen, remote sync | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — Flutter desktop environment with real-time dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
-| **[WebIDE](https://github.com/htl-stp-ecer/WebIDE)** | Visual flowchart editor — drag-and-drop step programming that generates real Python | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![Python](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) |
-| **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging (C++, Python, Dart) | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **[raccoon-image](https://github.com/htl-stp-ecer/raccoon-image)** | The repositoryhaving the build instructions + Flashable .img files |
+| Repository | Description | Tech | Build | Version |
+|:-----------|:------------|:-----|:------|:--------|
+| **[raccoon-lib](https://github.com/htl-stp-ecer/raccoon-lib)** | Core robotics library — PID control, kinematics, odometry, step-based missions | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | [![Build](https://github.com/htl-stp-ecer/raccoon-lib/actions/workflows/build-release.yml/badge.svg)](https://github.com/htl-stp-ecer/raccoon-lib/actions/workflows/build-release.yml) | [![Release](https://img.shields.io/github/v/release/htl-stp-ecer/raccoon-lib?label=)](https://github.com/htl-stp-ecer/raccoon-lib/releases/latest) |
+| **[stm32-data-reader](https://github.com/htl-stp-ecer/stm32-data-reader)** | Raspberry Pi ↔ STM32 SPI bridge, publishes sensor data via LCM | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) | [![Build](https://github.com/htl-stp-ecer/stm32-data-reader/actions/workflows/build-release.yml/badge.svg)](https://github.com/htl-stp-ecer/stm32-data-reader/actions/workflows/build-release.yml) | [![Release](https://img.shields.io/github/v/release/htl-stp-ecer/stm32-data-reader?label=)](https://github.com/htl-stp-ecer/stm32-data-reader/releases/latest) |
+| **[raccoon-cli](https://github.com/htl-stp-ecer/raccoon-cli)** | Dev toolchain — scaffolding, hardware wizard, codegen, remote sync | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | [![Build](https://github.com/htl-stp-ecer/raccoon-cli/actions/workflows/build-release.yml/badge.svg)](https://github.com/htl-stp-ecer/raccoon-cli/actions/workflows/build-release.yml) | [![Release](https://img.shields.io/github/v/release/htl-stp-ecer/raccoon-cli?label=)](https://github.com/htl-stp-ecer/raccoon-cli/releases/latest) |
+| **[botui](https://github.com/htl-stp-ecer/botui)** | StpVelox — Flutter desktop environment with real-time dashboard & sensor viz | ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) | [![Build](https://github.com/htl-stp-ecer/botui/actions/workflows/build-release.yml/badge.svg)](https://github.com/htl-stp-ecer/botui/actions/workflows/build-release.yml) | [![Release](https://img.shields.io/github/v/release/htl-stp-ecer/botui?label=)](https://github.com/htl-stp-ecer/botui/releases/latest) |
+| **[WebIDE](https://github.com/htl-stp-ecer/WebIDE)** | Visual flowchart editor — drag-and-drop step programming that generates real Python | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![Python](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | | |
+| **[raccoon-transport](https://github.com/htl-stp-ecer/raccoon-transport)** | LCM-based inter-process messaging (C++, Python, Dart) | ![C++](https://img.shields.io/badge/-C%2B%2B20-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Dart](https://img.shields.io/badge/-Dart-02569B?style=flat-square&logo=dart&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | [![CI](https://github.com/htl-stp-ecer/raccoon-transport/actions/workflows/ci.yml/badge.svg)](https://github.com/htl-stp-ecer/raccoon-transport/actions/workflows/ci.yml) | |
+| **[raccoon-cam](https://github.com/htl-stp-ecer/raccoon-cam)** | Camera pipeline for object detection | | [![Build](https://github.com/htl-stp-ecer/raccoon-cam/actions/workflows/build-release.yml/badge.svg)](https://github.com/htl-stp-ecer/raccoon-cam/actions/workflows/build-release.yml) | |
+| **[raccoon-image](https://github.com/htl-stp-ecer/raccoon-image)** | The repository having the build instructions + Flashable .img files | | | |
 
 ### 🚀 Getting Started
 
@@ -74,10 +75,10 @@ $ raccoon create project MyRobot // creates a new project & starts the configura
 
 ### 📚 Documentation & Research
 
-| Repository | Description |
-|:-----------|:------------|
-| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://raccoon-docs.pages.dev/) |
-| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | (PRIVATE) ECER conference papers and competition archive |
+| Repository | Description | Build |
+|:-----------|:------------|:------|
+| **[documentation](https://github.com/htl-stp-ecer/documentation)** | Full platform docs — [hosted here](https://raccoon-docs.pages.dev/) | [![Build](https://github.com/htl-stp-ecer/documentation/actions/workflows/hugo.yml/badge.svg)](https://github.com/htl-stp-ecer/documentation/actions/workflows/hugo.yml) |
+| **[Papers-and-Documentations](https://github.com/htl-stp-ecer/Papers-and-Documentations)** | (PRIVATE) ECER conference papers and competition archive | |
 
 ---
 
