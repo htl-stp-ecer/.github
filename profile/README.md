@@ -99,7 +99,7 @@ On graduating in 2026, Tobias open-sourced everything — not just for future HT
 | Name | Role |
 |:-----|:-----|
 | **[Tobias Madlberger](https://github.com/ToberoCat)** | Founder & Lead Architect — platform design, middleware, firmware, toolchain, SDK, AI pipeline, WebIDE core, and everything in between (2022–2026, 1000+ hours) |
-| Matthias Greil | Hardware & Firmware — STM32 implementation, IMU integration, low-level driver work; shaped the high-level SDK as a power user |
+| **[Matthias Greil](https://github.com/einFoxy)** | Hardware & Firmware — STM32 implementation, IMU integration, low-level driver work; shaped the high-level SDK as a power user |
 | Fabian Popov | AI & Visualization — object detection data labeling, game table visualization and simulation in the WebIDE |
 | Jakob Schlögl | UI — BotUI development |
 | **[Daniel Schneeweis](https://github.com/Kuucheen)** | WebIDE — developed the web-based IDE |
