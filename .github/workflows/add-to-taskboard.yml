@@ -1,0 +1,41 @@
+name: Add to taskboard
+
+# Reusable workflow: puts the triggering issue / PR on the Raccoon taskboard
+# (https://github.com/orgs/htl-stp-ecer/projects/5).
+# Closing/merging is handled by the project's built-in "Auto-archive items" workflow.
+#
+# Call it from a repo with .github/workflows/add-to-taskboard.yml (see that file in any raccoon repo).
+
+on:
+  workflow_call:
+
+permissions: {}
+
+env:
+  ORG: htl-stp-ecer
+  PROJECT_NUMBER: "5"
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create app token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          owner: ${{ env.ORG }}
+          permission-organization-projects: write
+
+      - name: Add item to project
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          ITEM_URL: ${{ github.event.issue.html_url || github.event.pull_request.html_url }}
+        run: |
+          set -euo pipefail
+          if [ -z "$ITEM_URL" ]; then
+            echo "::error::no issue or pull request in this event"
+            exit 1
+          fi
+          gh project item-add "$PROJECT_NUMBER" --owner "$ORG" --url "$ITEM_URL"
